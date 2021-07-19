@@ -57,6 +57,13 @@ source ~/catkin_ws/devel/setup.bash
 roslaunch ugv_bot ugvbot_world.launch
 ```
 
+## Simulation Results
+- The navigation stack uses laser scans from 2 sources namely, the LIDAR scan and the custom made Lane Detection scan.
+
+- Both combined provide the needed data to allow the ROS gmappping costamp function to localize our bot in its path, the object scans from teh hector-map package   allow the stack to predict the best possible path.
+
+- ![alt text](https://github.com/101vinayak/UGV-Centaur-NavStack/blob/main/launch/Images_launch/final_config.png)
+
 ## Notes
 - The setup assumes that you have catkin_ws folder on your home directory if not, do changes accordingly.
 
